@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="com.junhuayu.chooseedittextdemo_y.MainActivity">
+
+    <com.junhuayu.chooseedittextdemo_y.ChooseEditText
+        android:id="@+id/chooseedittext"
+        app:cet_Hint="Input content "
+        app:cet_TextSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="4dp">
+    </com.junhuayu.chooseedittextdemo_y.ChooseEditText>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search">
+
+    </Button>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIKE"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADIDAS"/>
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIZUNO"/>
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安踏"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView"/>
+
+    <com.junhuayu.chooseedittextdemo_y.TabButton
+        android:id="@+id/tabbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.junhuayu.chooseedittextdemo_y.TabButton>
+
+
+    <!--<com.junhuayu.chooseedittextdemo_y.TabEditText-->
+        <!--android:id="@+id/tab_et_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dip">-->
+    <!--</com.junhuayu.chooseedittextdemo_y.TabEditText>-->
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dip"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:translationY="-100dip"
+            android:background="@mipmap/left"/>
+        <com.junhuayu.chooseedittextdemo_y.TabEditText
+            android:id="@+id/tab_et_layout"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="40dip">
+        </com.junhuayu.chooseedittextdemo_y.TabEditText>
+        <TextView
+            android:text="搜索"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/backGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/yellow_background"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/smileFace"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/like_1"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_height="wrap_content">
+        <com.junhuayu.chooseedittextdemo_y.SmileView
+            android:id="@+id/smileView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    
+    <com.junhuayu.chooseedittextdemo_y.Demo
+        android:layout_width="match_parent"
+        android:background="@color/colorYellow"
+        android:layout_height="50dip">
+    </com.junhuayu.chooseedittextdemo_y.Demo>
+
+</LinearLayout>

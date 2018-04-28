@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <declare-styleable name="ChooseEditText">
+        <attr name="cet_ChooseBgColor" format="reference|color"/>
+        <attr name="cet_ChooseTextColor" format="reference|color"/>
+        <attr name="cet_TextSize" format="reference|dimension"/>
+        <attr name="cet_Hint" format="reference|string"/>
+    </declare-styleable>
+
+</resources>
